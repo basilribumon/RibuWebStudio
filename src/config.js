@@ -1,6 +1,7 @@
 export const site = {
   name: 'Ribu Web Studio', founder: 'Basil', location: 'Kerala, India',
   whatsapp: '919847328745', whatsappDisplay: '+91 98473 28745',
+  whatsappLink: 'https://wa.me/qr/BSPJYHUADKVNB1?s=p',
   instagram: 'https://www.instagram.com/ribuwebstudio/',
   linkedin: 'https://www.linkedin.com/in/basil-t?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   github: '', portfolio: '',
