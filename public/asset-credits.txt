@@ -1,4 +1,0 @@
-Background loop: “Loops, motion loops, motion” by tommylineweaver
-Source: https://pixabay.com/videos/loops-motion-loops-motion-moving-12528/
-License: https://pixabay.com/service/license-summary/
-The source clip is adapted for a muted, looping full-site website background.

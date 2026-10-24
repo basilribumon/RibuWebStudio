@@ -87,23 +87,10 @@
 @media(max-width:700px){.reveal{transform:translate3d(0,20px,0);filter:none;transition-duration:.65s}.hero-art{translate:0 min(var(--hero-shift,0px),34px)}.hero-art>.device-screen,.hero-art>.device-laptop,.hero-art>.device-phone{animation:none}.project-card .project-visual>.preview,.project-card.is-visible .project-visual>.preview{transform:none;transition:none}}
 @media(prefers-reduced-motion:reduce){.reveal,.reveal.is-visible{transform:none;filter:none;transition:none;will-change:auto}.hero-art{translate:none;transition:none}.hero-copy>.eyebrow,.hero-copy>.hero-mark,.hero-copy>h1,.hero-copy>p,.hero-copy>.hero-actions,.hero-copy>.hero-location,.hero-art>.device-screen,.hero-art>.device-laptop,.hero-art>.device-phone{animation:none}.project-card .project-visual>.preview{transform:none;transition:none}}
 
-.hero-video,.hero-video-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.hero-video{z-index:0;object-fit:cover;opacity:.34;filter:saturate(.72) brightness(.68)}
-.hero-video-overlay{z-index:1;background:linear-gradient(90deg,rgba(5,5,5,.64),rgba(5,5,5,.37) 55%,rgba(5,5,5,.58)),linear-gradient(0deg,rgba(5,5,5,.5),rgba(5,5,5,.16))}
-.hero-grid{z-index:2;opacity:.2}
-.hero-copy,.hero-art,.scroll-cue,.hero-index{z-index:3}
-@media(max-width:700px){.hero-video{opacity:.25;object-position:center;filter:saturate(.75) brightness(.68)}.hero-video-overlay{background:linear-gradient(90deg,rgba(5,5,5,.61),rgba(5,5,5,.36) 55%,rgba(5,5,5,.56)),linear-gradient(0deg,rgba(5,5,5,.48),rgba(5,5,5,.2))}}
-@media(prefers-reduced-motion:reduce){.hero-video{display:none}}
 
-/* Selected blue loop carries the existing dark theme through every section. */
-.site-video-background{position:fixed;z-index:0;inset:0;overflow:hidden;pointer-events:none;background:#050505}
-.site-background-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.5;filter:saturate(.9) brightness(.8)}
-.site-video-overlay{position:absolute;inset:0;background:linear-gradient(110deg,rgba(5,5,5,.38),rgba(5,5,5,.32) 50%,rgba(5,5,5,.38))}
-#root>header{z-index:20}#root>main,#root>footer{position:relative;z-index:1}
-.hero{background:radial-gradient(ellipse at 77% 50%,rgba(27,37,16,.72) 0,rgba(10,14,7,.48) 23%,transparent 53%),transparent}
-.about,.tools,.reasons{background:rgba(10,11,8,.46)}
-.contact{background:radial-gradient(ellipse at 4% 75%,rgba(23,32,12,.74) 0,transparent 36%),rgba(7,8,6,.46)}
-footer{background:rgba(5,6,5,.58)}
-@media(max-width:700px){.site-background-video{opacity:.4;object-position:center}.site-video-overlay{background:linear-gradient(110deg,rgba(5,5,5,.48),rgba(5,5,5,.42) 50%,rgba(5,5,5,.48))}.hero{background:radial-gradient(ellipse at 50% 67%,rgba(27,37,16,.75),transparent 47%),transparent}}
-@media(prefers-reduced-motion:reduce){.site-video-background{display:none}}
 
+
+
+/* Keep mobile sections and controls aligned inside the viewport. */
+@media(max-width:700px){html{overflow-x:clip}.section,.hero{width:100%;min-width:0}.section-heading-row,.about-layout,.contact-layout,.reasons-layout,.project-grid,.service-grid,.tool-columns{min-width:0}.section-heading-row h2,.display-heading,.reasons h2,.contact h2{overflow-wrap:anywhere}.project-meta{flex-wrap:wrap;align-items:flex-start;row-gap:7px}.project-links{flex-wrap:wrap;justify-content:flex-start;column-gap:18px;row-gap:4px}.project-links a,.project-links button{white-space:normal}.contact-form,.contact-form label{min-width:0}.footer-top,.footer-bottom{min-width:0}.footer-links{flex-wrap:wrap;row-gap:10px}}
+@media(max-width:380px){.hero-actions{grid-template-columns:1fr}.hero-actions .button{justify-content:space-between}.hero-location{gap:7px}.project-links{column-gap:14px}}
