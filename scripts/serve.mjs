@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const base = process.argv[2] ?? '.';
 const root = fileURLToPath(new URL(`../${base}/`, import.meta.url));
-const types = { '.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.xml':'application/xml','.txt':'text/plain' };
+const types = { '.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.xml':'application/xml','.txt':'text/plain','.mp4':'video/mp4','.webm':'video/webm' };
 createServer(async (req,res)=>{
   try {
     const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
@@ -20,4 +20,4 @@ createServer(async (req,res)=>{
     }
     const body=await readFile(path);res.writeHead(200,{'content-type':types[extname(path)]||'application/octet-stream'});res.end(body);
   } catch { res.writeHead(404);res.end('Not found'); }
-}).listen(4173,()=>console.log('Ribu Web Studio at http://localhost:4173'));
+}).listen(Number(process.env.PORT)||4173,()=>console.log(`Ribu Web Studio at http://localhost:${Number(process.env.PORT)||4173}`));
