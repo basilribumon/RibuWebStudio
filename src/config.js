@@ -1,12 +1,12 @@
 // Update these brand fields to rebrand the portfolio; place the logo file in public/.
 export const site = {
-  name: 'Ribu Web Studio', tagline: 'Your Vision. Our Digital Craft.', founder: 'Basil', location: 'Kerala, India',
-  logo: '/ribu-web-studio-logo.jpg', brandMark: 'RW', accentColor: '#b7ff35',
-  description: 'Modern websites, thoughtfully designed and built. Independent digital studio based in Kerala, India.',
-  whatsapp: '919847328745', whatsappDisplay: '+91 98473 28745',
-  whatsappLink: 'https://wa.me/qr/BSPJYHUADKVNB1?s=p',
-  instagram: 'https://www.instagram.com/ribuwebstudio/',
-  linkedin: 'https://www.linkedin.com/in/basil-t?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+  name: 'LYROX STUDIO', tagline: 'BUILD BEYOND LIMITS.', founder: 'Basil', location: 'Kerala, India', url: 'https://ribuwebstudio.vercel.app/',
+  logo: '/lyrox-studio-logo.jpg', brandMark: 'L', accentColor: '#1677FF', secondaryAccent: '#00C8FF', primaryBackground: '#05070D', secondaryBackground: '#0A1020', primaryText: '#FFFFFF', secondaryText: '#A7B4C8', heroDescription: 'Professional websites, online stores, and custom digital experiences built around your business.' ,
+  description: 'LYROX STUDIO is a professional web development and digital solutions studio. We create modern, responsive and user-friendly websites, e-commerce platforms, landing pages and custom web applications that help businesses build a powerful online presence.',
+  whatsapp: '919847328745', whatsappDisplay: '+91 98473 28745', email: 'basilribumon@gmail.com',
+  whatsappLink: 'https://wa.me/919847328745',
+  instagram: '',
+  linkedin: 'https://linkedin.com/in/basil-t',
   github: '', portfolio: '',
   technologies: [
     { group: 'Frontend', items: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'] },
@@ -21,10 +21,12 @@ export const projects = [
 ];
 
 export const services = [
-  ['01', 'Business websites', 'Modern websites for local businesses, shops, service providers, startups, and professionals.'],
-  ['02', 'E-commerce websites', 'Product catalogs, product details, carts, and agreed order or payment workflows.'],
-  ['03', 'Landing pages', 'Focused pages for campaigns, products, services, and business promotions.'],
-  ['04', 'UI/UX & website design', 'Thoughtful layouts, clear hierarchy, and user-friendly, mobile-first interfaces.'],
-  ['05', 'Website deployment', 'Deployment assistance, domain configuration, and production builds on the selected platform.'],
-  ['06', 'Website maintenance', 'Updates, troubleshooting, content changes, and ongoing support under an agreed plan.'],
+  ['01', 'Website Design & Development', 'Modern, responsive websites designed and built around your business goals.'],
+  ['02', 'Business Websites', 'Professional websites that help businesses build a clear, credible online presence.'],
+  ['03', 'E-commerce Websites', 'Customer-friendly online stores for product discovery and shopping.'],
+  ['04', 'Landing Page Development', 'Focused landing pages for products, services, and campaigns.'],
+  ['05', 'Custom Web Applications', 'Purpose-built web applications for your workflows and customer needs.'],
+  ['06', 'UI/UX Design', 'Thoughtful user journeys, clear interfaces, and responsive layouts.'],
+  ['07', 'Website Redesign', 'Refresh your existing site with a modern visual system and improved usability.'],
+  ['08', 'Website Maintenance', 'Ongoing updates, troubleshooting, and improvements for your website.'],
 ];

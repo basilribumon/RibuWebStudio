@@ -20,4 +20,4 @@ createServer(async (req,res)=>{
     }
     const body=await readFile(path);res.writeHead(200,{'content-type':types[extname(path)]||'application/octet-stream'});res.end(body);
   } catch { res.writeHead(404);res.end('Not found'); }
-}).listen(Number(process.env.PORT)||4173,()=>console.log(`Ribu Web Studio at http://localhost:${Number(process.env.PORT)||4173}`));
+}).listen(Number(process.env.PORT)||4173,()=>console.log(`LYROX STUDIO at http://localhost:${Number(process.env.PORT)||4173}`));

@@ -4,7 +4,7 @@ import { projects, site } from '../src/config.js';
 const html = await readFile('dist/index.html', 'utf8');
 const app = await readFile('dist/src/main.js', 'utf8');
 const checks = [
-  ['page title and metadata', html.includes('Ribu Web Studio') && html.includes('name="description"')],
+  ['page title and metadata', html.includes(site.name) && html.includes(site.tagline) && html.includes('name="description"')],
   ['app module and stylesheet', html.includes('/src/main.js') && html.includes('/src/style.css')],
   ['all three project records', projects.length === 3 && projects.every(p => p.title && p.description && p.visual)],
   ['only supplied project URLs', projects.filter(p => p.url).length === 2 && projects.filter(p => p.url).every(p => p.url.startsWith('https://'))],
@@ -15,8 +15,8 @@ const checks = [
   ['form does not claim backend storage', app.includes('does not store or submit your information here')],
   ['dialog handler cannot stop form setup', !app.includes("modal.querySelector('.modal-close').addEventListener") && app.includes("document.querySelector('.contact-form').addEventListener('submit'")],
   ['mobile project panel includes detail and live-site content', app.includes('project-modal-panel') && app.includes('modal-live') && app.includes('case-facts')],
-  ['logo asset copied to production output', (await stat('dist/ribu-web-studio-logo.jpg')).size > 1000],
-  ['Instagram and LinkedIn profile links configured', site.instagram.includes('instagram.com/ribuwebstudio') && site.linkedin.includes('linkedin.com/in/basil-t')],
+  ['logo asset copied to production output', (await stat(`dist/${site.logo.slice(1)}`)).size > 1000],
+  ['Email and LinkedIn contact links configured', app.includes(site.email) && site.linkedin.includes('linkedin.com/in/basil-t')],
   ['scroll reveal and progress behavior', app.includes('revealObserver') && app.includes('scroll-progress')],
 ];
 const sample = new URL(`https://wa.me/${site.whatsapp}`);
