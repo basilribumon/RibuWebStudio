@@ -1,6 +1,10 @@
 # Ribu Web Studio
 
-A zero-dependency, static portfolio site. Project content, service descriptions, links, contact details, and technology list are centralized in `src/config.js`.
+A zero-dependency, static portfolio site. Brand identity, project content, services, social links, and contact details are centralized in `src/config.js`.
+
+## Update the brand
+
+Edit the `site` object in `src/config.js`: `name`, `tagline`, `accentColor` (hex), `brandMark`, `description`, and `logo`. Put the replacement logo in `public/` and set `logo` to its path, such as `/brand-logo.png`. The header, footer, favicon, accent color, page title, social metadata, and production HTML read these settings automatically. Then run `npm run build` and commit/push the changes.
 
 ## Run locally
 

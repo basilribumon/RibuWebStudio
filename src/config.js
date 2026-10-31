@@ -1,5 +1,8 @@
+// Update these brand fields to rebrand the portfolio; place the logo file in public/.
 export const site = {
-  name: 'Ribu Web Studio', founder: 'Basil', location: 'Kerala, India',
+  name: 'Ribu Web Studio', tagline: 'Your Vision. Our Digital Craft.', founder: 'Basil', location: 'Kerala, India',
+  logo: '/ribu-web-studio-logo.jpg', brandMark: 'RW', accentColor: '#b7ff35',
+  description: 'Modern websites, thoughtfully designed and built. Independent digital studio based in Kerala, India.',
   whatsapp: '919847328745', whatsappDisplay: '+91 98473 28745',
   whatsappLink: 'https://wa.me/qr/BSPJYHUADKVNB1?s=p',
   instagram: 'https://www.instagram.com/ribuwebstudio/',
